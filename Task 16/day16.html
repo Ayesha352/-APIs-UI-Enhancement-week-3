@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 16 - Weather App</title>
+    <link rel="stylesheet" href="day16.css">
+</head>
+<body>
+
+    <h1>Weather App</h1>
+
+    <div class="search-box">
+        <input type="text" id="cityInput" placeholder="enter city name" />
+        <button onclick="getWeather()">Get Weather</button>
+    </div>
+
+    <p id="errorMsg"></p>
+
+    <div class="weather-card" id="weatherResult">
+        <h2 id="cityName"></h2>
+        <p id="temperature"></p>
+        <p id="description"></p>
+        <p id="humidity"></p>
+        <p id="wind"></p>
+    </div>
+
+    <script src="day16.js"></script>
+
+</body>
+</html>
