@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 18 - E-commerce Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h2>ShopZone</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Cart (<span id="cartCount">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>New Arrivals</h1>
+        <p>Check out our latest products</p>
+    </div>
+
+    <div class="container">
+        <h2>Our Products</h2>
+        <div class="products-grid">
+
+            <div class="product-card">
+                <img src="images/headphone.jpg" alt="Wireless Headphones" class="product-img-real">
+                <div class="product-info">
+                    <h3>Wireless Headphones</h3>
+                    <p>High quality sound with noise cancellation. Battery life up to 20 hours.</p>
+                    <span class="price">$49.99</span>
+                    <button onclick="addToCart('Wireless Headphones')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/smartphone.jpg" alt="smartphone" class="product-img-real">
+                <div class="product-info">
+                    <h3>Smart Phone</h3>
+                    <p>6.5 inch display, 128GB storage, 48MP camera. Fast charging support.</p>
+                    <span class="price">$299.99</span>
+                    <button onclick="addToCart('Smart Phone')">Add to Cart</button>
+                </div>
+            </div>
+
+          <div class="product-card">
+                <img src="images/laptop.jpg" alt="laptop" class="product-img-real">
+                <div class="product-info">
+                    <h3>Laptop</h3>
+                    <p>Intel Core i5, 8GB RAM, 256GB SSD. Lightweight and fast performance.</p>
+                    <span class="price">$599.99</span>
+                    <button onclick="addToCart('Laptop')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/smartwatch.jpg" alt="smartwatch" class="product-img-real">
+                <div class="product-info">
+                    <h3>Smart Watch</h3>
+                    <p>Track your fitness, heart rate and notifications on your wrist.</p>
+                    <span class="price">$79.99</span>
+                    <button onclick="addToCart('Smart Watch')">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="images/digitalcamera.jpg" alt="digitalcamera" class="product-img-real">
+                <div class="product-info">
+                    <h3>Digital Camera</h3>
+                    <p>24MP resolution, optical zoom, perfect for photography beginners.</p>
+                    <span class="price">$149.99</span>
+                    <button onclick="addToCart('Digital Camera')">Add to Cart</button>
+                </div>
+            </div>
+
+           <div class="product-card">
+                <img src="images/gaming controller.jpg" alt="gaming controller" class="product-img-real">
+                <div class="product-info">
+                    <h3>Gaming Controller</h3>
+                    <p>Wireless controller compatible with PC and consoles. Ergonomic design.</p>
+                    <span class="price">$39.99</span>
+                    <button onclick="addToCart('Gaming Controller')">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="cartMsg"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
