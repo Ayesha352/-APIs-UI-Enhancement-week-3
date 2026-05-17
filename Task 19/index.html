@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 19 - Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Day 19 - Form Validation</h1>
+
+    <form id="myForm" onsubmit="validateForm(event)">
+
+        <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" id="name" placeholder="enter your name" />
+            <p class="error" id="nameError"></p>
+        </div>
+
+        <div class="form-group">
+            <label>Email *</label>
+            <input type="text" id="email" placeholder="enter your email" />
+            <p class="error" id="emailError"></p>
+        </div>
+
+        <div class="form-group">
+            <label>Password *</label>
+            <input type="password" id="password" placeholder="enter password" />
+            <p class="error" id="passwordError"></p>
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="text" id="phone" placeholder="enter phone number" />
+            <p class="error" id="phoneError"></p>
+        </div>
+
+        <button type="submit">Submit</button>
+
+        <p id="successMsg"></p>
+
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
