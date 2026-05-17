@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+h1 {
+    color: blue;
+}
+
+input {
+    padding: 8px;
+    width: 200px;
+    font-size: 15px;
+}
+
+button {
+    padding: 8px 14px;
+    font-size: 15px;
+    cursor: pointer;
+    background: blue;
+    color: white;
+    border: none;
+}
+
+#errorMsg {
+    color: red;
+    margin-top: 10px;
+}
+
+#weatherResult {
+    margin-top: 20px;
+    padding: 16px;
+    background: #eee;
+    width: 300px;
+    display: none;
+}

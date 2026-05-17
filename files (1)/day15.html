@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Day 15 - Weather App</title>
+    <link rel="stylesheet" href="day15.css">
+</head>
+<body>
+
+    <h1>Day 15 - Weather App</h1>
+    <p>Enter a city name to get weather data</p>
+
+    <input type="text" id="cityInput" placeholder="enter city name" />
+    <button onclick="getWeather()">Get Weather</button>
+
+    <p id="errorMsg"></p>
+
+    <div id="weatherResult">
+        <h2 id="cityName"></h2>
+        <p id="temperature"></p>
+        <p id="description"></p>
+        <p id="humidity"></p>
+        <p id="wind"></p>
+    </div>
+
+    <script src="day15.js"></script>
+
+</body>
+</html>
