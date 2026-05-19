@@ -1,0 +1,489 @@
+
+body{
+    background-color: #121212;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar{
+    background:#111 ;
+    padding:10px 30px;
+}
+
+.navbar .container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+    border-radius:15px;
+}
+
+.navbar-nav{
+    margin-left:auto;
+    align-items:center;
+}
+
+.navbar .nav-link{
+    color:white ;
+    font-size:20px;
+    margin:0 12px;
+    transition:0.3s;
+}
+
+.navbar .nav-link:hover{
+    color:#f5b041 ;
+}
+
+.navbar-toggler{
+    background:#f5b041 ;
+    border:none;
+}
+.navbar-toggler-icon{
+    filter: invert(1);
+}
+
+/* MOBILE */
+
+@media(max-width:991px){
+
+.navbar-nav{
+    text-align:center;
+    padding-top:20px;
+}
+
+.logo{
+    width:55px;
+    height:55px;
+}
+
+}
+
+.carousel-caption{
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-caption h2 span{
+    color: #f5b041;
+}
+
+
+#living_room{
+    background: #000;
+    padding: 60px 0;
+}
+
+#living_room .card-group{
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#living_room .card{
+    background: #111;
+    border: none;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+#living_room .card:hover{
+    transform: translateY(-10px);
+}
+
+#living_room .card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#living_room .card-body{
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#living_room .card-title{
+    color: #f5a623;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#living_room h2{
+    color: #f5a623;
+    margin-bottom: 40px;
+}
+
+#Bed_room{
+    background:#000;
+    padding:80px 0;
+}
+
+#Bed_room .row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+}
+
+#Bed_room img{
+    width:100%;
+    max-width:500px;
+    height:650px;
+    object-fit:cover;
+    border-radius:30px;
+    box-shadow:0 0 30px rgba(245,176,65,0.3);
+}
+
+#Bed_room h1,
+#Bed_room h2{
+    color:#f5b041;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+#Bed_room p{
+    color:white;
+    font-size:20px;
+    line-height:40px;
+}
+
+#Bed_room .small-img{
+    width:100%;
+    max-width:450px;
+    height:320px;
+    object-fit:cover;
+    border-radius:25px;
+    margin-top:30px;
+    box-shadow:0 0 20px rgba(245,176,65,0.2);
+}
+
+@media(max-width:992px){
+
+    #Bed_room .row{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    #Bed_room img{
+        max-width:400px;
+        height:500px;
+    }
+
+    #Bed_room .small-img{
+        max-width:350px;
+        height:250px;
+    }
+
+    #Bed_room p{
+        font-size:18px;
+        line-height:32px;
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    #Bed_room{
+        padding:50px 15px;
+    }
+
+    #Bed_room h1{
+        font-size:34px;
+    }
+
+    #Bed_room h2{
+        font-size:28px;
+    }
+
+    #Bed_room p{
+        font-size:16px;
+        line-height:28px;
+    }
+
+    #Bed_room img{
+        max-width:100%;
+        height:400px;
+    }
+
+    #Bed_room .small-img{
+        max-width:100%;
+        height:220px;
+    }
+
+}
+
+
+@media(max-width:480px){
+
+    #Bed_room h1{
+        font-size:28px;
+    }
+
+    #Bed_room h2{
+        font-size:22px;
+    }
+
+    #Bed_room p{
+        font-size:14px;
+        line-height:24px;
+    }
+
+   #Bed_room img{
+    width:100%;
+    max-width:500px;
+    height:auto;
+    display:block;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+    #Bed_room .small-img{
+        height:180px;
+    }
+
+}
+
+#Home_Decor{
+    background:#000;
+    padding:60px 0;
+}
+
+#Home_Decor .card-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+#Home_Decor .card{
+    background:#111 ;
+    border:none;
+    border-radius:12px;
+    overflow:hidden;
+    transition:0.4s;
+    flex:1;
+    min-width:300px;
+}
+
+#Home_Decor .card:hover{
+    transform:translateY(-10px);
+}
+
+#Home_Decor .card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+#Home_Decor .card-body{
+    background:#111 ;
+    padding:15px;
+}
+
+#Home_Decor .card-text{
+    color:white ;
+    font-size:18px;
+    margin:0;
+}
+
+#Home_Decor .text-muted{
+    color:#ccc ;
+}
+
+#Home_Decor h2{
+    color:#f5b041;
+    margin-bottom:40px;
+}
+
+#Office_Furniture{
+    background:#000;
+    padding:60px 0;
+}
+
+#Office_Furniture .card-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+#Office_Furniture .card{
+    background:#111 ;
+    border:none;
+    border-radius:12px;
+    overflow:hidden;
+    transition:0.4s;
+    flex:1;
+    min-width:300px;
+}
+
+#Office_Furniture .card:hover{
+    transform:translateY(-10px);
+}
+
+#Office_Furniture .card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+#Office_Furniture .card-body{
+    background:#111 ;
+    padding:15px;
+}
+
+#Office_Furniture .card-text{
+    color:white ;
+    font-size:18px;
+    margin:0;
+}
+
+#Office_Furniture .text-muted{
+    color:#ccc ;
+}
+
+#Office_Furniture h2{
+    color:#f5b041;
+    margin-bottom:40px;
+}
+
+.btn-dark{
+    background-color: #f5b041;
+    border: none;
+    color: black;
+    font-weight: 600;
+}
+
+.btn-dark:hover{
+    background-color: #d68910;
+    color: white;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+section{
+    padding: 60px 0;
+}
+
+h1,h2,h3,h4,h5{
+    color: #f5b041;
+}
+
+.bg-light{
+    background-color: #1e1e1e ;
+}
+
+.bg-light p{
+    color: #ddd ;
+}
+
+.about-section{
+    background-color:#111;
+    padding:60px 40px;
+    border-radius:20px;
+    color:white;
+}
+
+.about-section h1,
+.about-section h2{
+    color:#f5b041;
+    text-align:center;
+}
+
+.about-section p{
+    color:white;
+    font-size:20px;
+    line-height:1.8;
+}
+
+.about-section img{
+    width:320px;
+    height:420px;
+    object-fit:cover;
+    border-radius:20px;
+    display:block;
+    margin:auto;
+    box-shadow:0 0 20px rgba(245,176,65,0.4);
+}
+
+.form-control,
+textarea{
+    background-color: #2c2c2c;
+    color: white;
+    border: 1px solid #444;
+}
+
+.form-control:focus,
+textarea:focus{
+    background-color: #2c2c2c;
+    color: white;
+    border-color: #f5b041;
+    box-shadow: none;
+}
+.form-control::placeholder{
+    color:#bbb ;
+}
+
+
+
+footer{
+    background-color: #000 ;
+}
+
+footer a{
+    text-decoration: none;
+    color: #f5b041 ;
+}
+
+footer a:hover{
+    color: white ;
+}
+
+.website-counter{
+    background-color: #f5b041;
+    color: black;
+    padding: 5px 12px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.modal-content{
+    background-color: #1f1f1f;
+    color: white;
+}
+
+.modal-header,
+.modal-footer{
+    border-color: #333;
+}
+
+@media(max-width:768px){
+
+    .carousel-caption{
+        padding: 10px;
+    }
+
+    .carousel-caption h2{
+        font-size: 22px;
+    }
+
+    .carousel-caption p{
+        font-size: 14px;
+    }
+
+    .navbar-brand img{
+        width: 70px;
+    }
+}
