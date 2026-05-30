@@ -1,0 +1,519 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+.navbar {
+    background: #1a1a1a;
+    padding: 12px 0;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+}
+
+.logo {
+    border-radius: 8px;
+    height: 60px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 8px 14px;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 14px;
+    width: 0;
+    height: 2px;
+    background: #c8860a;
+    transition: width 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #c8860a;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: calc(100% - 28px);
+}
+
+.navbar-nav .nav-link.active {
+    color: #c8860a;
+    font-weight: 600;
+}
+
+.navbar-toggler {
+    border: 1px solid #c8860a;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+.carousel-inner .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.carousel-inner .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+    text-align: center;
+}
+
+.carousel-inner .carousel-caption span {
+    color: #c8860a;
+}
+
+.carousel-inner .carousel-caption h2 {
+    color: white;
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.carousel-inner .carousel-caption p {
+    font-size: 18px;
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 28px;
+}
+
+
+.section-heading {
+    color: #c8860a;
+    font-weight: 700;
+}
+
+h2.fw-bold {
+    font-size: 30px;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+h2.fw-bold::after {
+    content: '';
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: #c8860a;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+
+#course {
+    padding: 80px 0;
+    background: #fafafa;
+}
+
+.course .box {
+    padding: 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course .box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+}
+
+.course .box .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.course .box .card-body {
+    padding: 18px;
+}
+
+.course .box .card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 14px;
+}
+
+.course .box .btn-dark {
+    background: #1a1a1a;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background 0.2s;
+    margin-right: 8px;
+}
+
+.course .box .btn-dark:hover {
+    background: #c8860a;
+}
+
+
+#fee {
+    padding: 80px 0;
+}
+
+.card1, .card2, .card3 {
+    border-radius: 12px;
+    border: 1px solid #eee;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.card1:hover {
+    background: #00ffb6;
+    border: 1px solid #00ffb6;
+    transform: translateY(-4px);
+}
+
+.card1:hover .list-group-item {
+    background: #00ffb6;
+}
+
+.card2:hover {
+    background: #00C9FF;
+    border: 1px solid #00C9FF;
+    transform: translateY(-4px);
+}
+
+.card2:hover .list-group-item {
+    background: #00C9FF;
+}
+
+.card3:hover {
+    background: #ff95e9;
+    border: 1px solid #ff95e9;
+    transform: translateY(-4px);
+}
+
+.card3:hover .list-group-item {
+    background: #ff95e9;
+}
+
+.card:hover .btn-outline-dark {
+    color: white;
+    background: #212529;
+}
+
+.btn-hero img {
+    border-radius: 8px;
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+#Bed_room {
+    padding: 80px 0;
+    background: #fafafa;
+}
+
+#Bed_room .img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+#Bed_room .lh-base {
+    margin-top: 20px;
+}
+
+#Bed_room .row .col-md-6 .img-fluid {
+    height: 260px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.lh-base {
+    background-color: #fffaf3;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #f0e0c0;
+    transition: 0.3s;
+    line-height: 1.8;
+    font-size: 14px;
+    color: #555;
+}
+
+.lh-base:hover {
+    box-shadow: 0 8px 24px rgba(200,134,10,0.12);
+}
+
+#living_room {
+    padding: 80px 0;
+}
+
+#living_room .card-group .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 6px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+#living_room .card-group .card:hover {
+    transform: translateY(-5px);
+}
+
+#living_room .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+#living_room .card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #c8860a;
+}
+
+
+#Dining_Room {
+    padding: 80px 0;
+    background: #fafafa;
+}
+
+#Dining_Room img {
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+
+#Dining_Room img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+
+#Home_Decor {
+    padding: 80px 0;
+}
+
+#Home_Decor .card-group .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 6px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+#Home_Decor .card-group .card:hover {
+    transform: translateY(-5px);
+}
+
+#Home_Decor .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+
+#Office_Furniture {
+    padding: 80px 0;
+    background: #fafafa;
+}
+
+#Office_Furniture .card-group .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 6px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+#Office_Furniture .card-group .card:hover {
+    transform: translateY(-5px);
+}
+
+#Office_Furniture .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+
+.bg-dark h1 {
+    color: #c8860a;
+    padding: 40px 0 20px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.bg-dark h2 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+.bg-dark,
+.bg-dark p,
+.bg-dark h1,
+.bg-dark h2 {
+    color: #ffffff ;
+}
+
+#Contact {
+    padding: 80px 0;
+}
+
+#contact .form-control {
+    border-radius: 8px;
+    padding: 10px 14px;
+    border: 1.5px solid #ddd;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+#contact .form-control:focus {
+    border-color: #c8860a;
+    box-shadow: none;
+}
+
+#contact textarea {
+    resize: none;
+}
+
+.btn-warning {
+    background: #c8860a;
+    color: white;
+    border: none;
+    padding: 10px 32px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-warning:hover {
+    background: #a06a06;
+    transform: translateY(-2px);
+    color: white;
+}
+
+iframe {
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+footer {
+    background: #111;
+}
+
+footer h6 {
+    color: #c8860a;
+    letter-spacing: 0.05em;
+}
+
+footer p, footer a {
+    font-size: 14px;
+    color: #aaa;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #c8860a;
+}
+
+footer .text-center.p-4 {
+    font-size: 13px;
+    color: #888;
+}
+
+
+.card {
+    border-radius: 14px;
+    border: none;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.form-control {
+    border-radius: 8px;
+    padding: 10px 14px;
+    border: 1.5px solid #ddd;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.form-control:focus {
+    border-color: #c8860a;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background: #c8860a;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-weight: 600;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: #a06a06;
+}
+
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-caption h2 {
+        font-size: 28px;
+    }
+    .carousel-inner .carousel-caption p {
+        font-size: 14px;
+    }
+    .navbar-nav {
+        background: #1a1a1a;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 577px) {
+    .carousel-inner .carousel-caption h2 {
+        font-size: 22px;
+    }
+    .carousel-inner .carousel-caption p {
+        font-size: 13px;
+    }
+}
